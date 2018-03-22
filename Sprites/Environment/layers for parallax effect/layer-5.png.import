@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/layer-5.png-d626652059b7058b7e25815e3ece8775.stex"
+
+[deps]
+
+source_file="res://Sprites/Environment/layers for parallax effect/layer-5.png"
+source_md5="bd045805f848a79cfb51e2b46c5aca56"
+
+dest_files=[ "res://.import/layer-5.png-d626652059b7058b7e25815e3ece8775.stex" ]
+dest_md5="f789261917c4d7453b9e40b22656d0ff"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

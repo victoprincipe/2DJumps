@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/tile ground.png-0dd7d007726553ab7435dd6161902997.stex"
+
+[deps]
+
+source_file="res://Sprites/Environment/tile ground.png"
+source_md5="dfe0eea299734ca196ccf9cee59aae83"
+
+dest_files=[ "res://.import/tile ground.png-0dd7d007726553ab7435dd6161902997.stex" ]
+dest_md5="d56a2329175cab819812f9ed29095d2b"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

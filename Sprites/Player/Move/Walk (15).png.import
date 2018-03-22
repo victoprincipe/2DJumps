@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Walk (15).png-d2a2bb98640957406658b1cf8de97a93.stex"
+
+[deps]
+
+source_file="res://Sprites/Player/Move/Walk (15).png"
+source_md5="1e5269be87c364a7a70d9ad99ab458bc"
+
+dest_files=[ "res://.import/Walk (15).png-d2a2bb98640957406658b1cf8de97a93.stex" ]
+dest_md5="49a57b952f2ecc50eafd36f2fcdd4e2b"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

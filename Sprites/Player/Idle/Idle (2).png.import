@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Idle (2).png-75936482dc48a92f411facefb208d11c.stex"
+
+[deps]
+
+source_file="res://Sprites/Player/Idle/Idle (2).png"
+source_md5="a9157218521deecfabc29c47ab0a55f5"
+
+dest_files=[ "res://.import/Idle (2).png-75936482dc48a92f411facefb208d11c.stex" ]
+dest_md5="cea9a4fc3119088e2f292967b492077c"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
