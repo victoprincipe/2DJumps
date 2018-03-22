@@ -1,0 +1,89 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/Platform.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Parallax.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=3]
+
+[node name="Level" type="Node" index="0"]
+
+[node name="Platforms" type="Node" parent="." index="0"]
+
+editor/display_folded = true
+
+[node name="Platform" parent="Platforms" index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 10, 550 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Platform2" parent="Platforms" index="1" instance=ExtResource( 1 )]
+
+position = Vector2( 111.922, 550 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Platform3" parent="Platforms" index="2" instance=ExtResource( 1 )]
+
+position = Vector2( 210.922, 550 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Platform4" parent="Platforms" index="3" instance=ExtResource( 1 )]
+
+position = Vector2( 311.922, 550 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Platform5" parent="Platforms" index="4" instance=ExtResource( 1 )]
+
+position = Vector2( 413.922, 550 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Platform6" parent="Platforms" index="5" instance=ExtResource( 1 )]
+
+position = Vector2( 515.922, 550 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Platform7" parent="Platforms" index="6" instance=ExtResource( 1 )]
+
+position = Vector2( 616.922, 550 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Platform8" parent="Platforms" index="7" instance=ExtResource( 1 )]
+
+position = Vector2( 715.922, 550 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Platform9" parent="Platforms" index="8" instance=ExtResource( 1 )]
+
+position = Vector2( 817.922, 550 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Platform10" parent="Platforms" index="9" instance=ExtResource( 1 )]
+
+position = Vector2( 919.922, 550 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Platform11" parent="Platforms" index="10" instance=ExtResource( 1 )]
+
+position = Vector2( 1018.92, 550 )
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Parallax" type="Node" parent="." index="1"]
+
+[node name="Parallax" parent="Parallax" index="0" instance=ExtResource( 2 )]
+
+position = Vector2( -2, -34 )
+
+[node name="Player" parent="." index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 449, 114 )
+
+
