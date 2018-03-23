@@ -24,6 +24,15 @@ func flip():
 		sprite.scale.x = abs(sprite.scale.x) 
 	pass
 
+func animate():
+	if grounded and velocity.x == 0:
+		sprite.play("Idle")
+	if grounded and abs(velocity.x) > 0:
+		sprite.play("Walk")
+	if not grounded and velocity.y < 0:
+		sprite.play("Jumping")
+	pass
+
 func check_ground():
 	if ground_collisor.size() > 0:
 		grounded = true
@@ -70,6 +79,7 @@ func _physics_process(delta):
 	apply_gravity()
 	flip()
 	jump(delta)
+	animate()
 	k_body.move_and_slide(velocity)
 	velocity.x = 0
 	pass
