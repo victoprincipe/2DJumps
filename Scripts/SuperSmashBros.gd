@@ -2,13 +2,15 @@ extends Node
 
 onready var k_body = get_node("PlayerBody")
 onready var sprite = get_node("PlayerBody/AnimatedSprite")
+onready var particles = get_node("PlayerBody/JumpParticles")
 
 const gravity = 15
 var speed = 150
 var jump = false
-var jump_max_charges = 2
-var jump_charges = 2
-var jump_force = 500
+var jump_force_max_time = 0.5
+var jump_force_timer = 0
+var min_jump_force = 450
+var max_jump_force = 600
 var velocity = Vector2(0, 0)
 var ground_collisor = []
 var grounded = false
@@ -50,17 +52,23 @@ func get_input():
 		velocity.x = -speed
 	if Input.is_action_pressed("ui_right"):
 		velocity.x = speed
-	if Input.is_action_just_pressed("ui_jump"):
+	if Input.is_action_pressed("ui_jump"):
 		jump = true
 	pass
 
 func jump(delta):
-	if grounded:
-		jump_charges = jump_max_charges
-	if jump and jump_charges > 0:
-		jump_charges -= 1
-		velocity.y = 0
-		velocity.y -= jump_force
+	if jump and grounded:
+		particles.show()
+		jump_force_timer += delta
+		jump_force_timer = clamp(jump_force_timer, 0, jump_force_max_time)
+	if not jump and jump_force_timer > 0:
+		var jump_velocity = max_jump_force * (jump_force_timer/jump_force_max_time)
+		if jump_velocity < min_jump_force:
+			jump_velocity = min_jump_force
+		velocity.y -= jump_velocity
+		jump_force_timer = 0
+	if not jump:
+		particles.hide()
 	jump = false
 	pass
 

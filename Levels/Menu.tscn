@@ -82,7 +82,32 @@ text = "NES Megaman"
 flat = false
 align = 1
 
-[node name="DoubleJumpButton" type="Button" parent="Panel" index="2"]
+[node name="SuperSmashBrosButton" type="Button" parent="Panel" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 105.0
+margin_top = 319.0
+margin_right = 317.0
+margin_bottom = 406.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Super Smash Bros"
+flat = false
+align = 1
+
+[node name="DoubleJumpButton" type="Button" parent="Panel" index="3"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -108,6 +133,8 @@ flat = false
 align = 1
 
 [connection signal="pressed" from="Panel/NesMegamanButton" to="." method="_on_NesMegamanButton_pressed"]
+
+[connection signal="pressed" from="Panel/SuperSmashBrosButton" to="." method="_on_SuperSmashBrosButton_pressed"]
 
 [connection signal="pressed" from="Panel/DoubleJumpButton" to="." method="_on_DoubleJumpButton_pressed"]
 
