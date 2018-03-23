@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Scenes/Platform.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Parallax.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/MegamanNes.tscn" type="PackedScene" id=3]
 
 [node name="Level" type="Node" index="0"]
 
@@ -76,14 +76,34 @@ position = Vector2( 1018.92, 550 )
 scale = Vector2( 0.5, 0.5 )
 _sections_unfolded = [ "Transform" ]
 
+[node name="Platform12" parent="Platforms" index="11" instance=ExtResource( 1 )]
+
+position = Vector2( 672, 473 )
+scale = Vector2( 0.5, 0.25 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Platform13" parent="Platforms" index="12" instance=ExtResource( 1 )]
+
+position = Vector2( 772, 473 )
+scale = Vector2( 0.5, 0.25 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Platform14" parent="Platforms" index="13" instance=ExtResource( 1 )]
+
+position = Vector2( 873, 422 )
+scale = Vector2( 0.5, 0.75 )
+_sections_unfolded = [ "Transform" ]
+
 [node name="Parallax" type="Node" parent="." index="1"]
+
+editor/display_folded = true
 
 [node name="Parallax" parent="Parallax" index="0" instance=ExtResource( 2 )]
 
 position = Vector2( -2, -34 )
 
-[node name="Player" parent="." index="2" instance=ExtResource( 3 )]
+[node name="MegamanNes" parent="." index="2" instance=ExtResource( 3 )]
 
-position = Vector2( 449, 114 )
+position = Vector2( 513, 98 )
 
 
